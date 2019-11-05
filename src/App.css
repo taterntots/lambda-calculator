@@ -19,4 +19,45 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+
+/* My styles */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.operatorButtonSpacing {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    color: white;
+    border:none;
+    font-size: 2.0rem;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 3px 3px #322c2d;;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+}
+.numberButton {
+    background: #184379;
+}
+.operatorButton {
+    background: #247293;
+}
+.specialButton {
+    background: #225D9E;
+}
+button:hover {
+    background: #fff;
+    color: #282c34;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
