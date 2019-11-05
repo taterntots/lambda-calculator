@@ -10,7 +10,11 @@ import Display from './components/DisplayComponents/Display';
 import Logo from "./components/DisplayComponents/Logo";
 
 function App() {
-  const [output, setOutput] = useState(0);
+  const [display, setDisplay] = useState('');
+
+  const addToDisplay = value => {
+    setDisplay(display.concat(value))
+  }
 
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
@@ -22,14 +26,14 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        <Display />
+        <Display display={display}/>
       <div className='button-container'>
         <div className='left-container'>
           <div className='top-container'>
             <Specials />
           </div>
           <div className='bottom-container'>
-            <Numbers />
+            <Numbers addToDisplay={addToDisplay}/>
           </div>
         </div>
         <div className='right-container'>
