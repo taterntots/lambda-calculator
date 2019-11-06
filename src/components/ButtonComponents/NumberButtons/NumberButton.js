@@ -9,5 +9,3 @@ const NumberButton = props => {
   );
 };
 export default NumberButton;
-
-// onClick={() => props.number}
